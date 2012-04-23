@@ -23,7 +23,7 @@
 	if (gup.mqdebug === true && typeof(window.innerWidth) != 'undefined') {
 		var head = document.head,
 			style = document.createElement('style'),
-			rules = document.createTextNode('body[data-mqd]:before {background:red;border:1px solid #900;color:#fff;content:attr(data-mqd);font-family:"Courier New",Courier,monospace;font-size:12px;left:0;line-height: 16px;padding:3px 6px 5px 6px;position:fixed;top:0;}');
+			rules = document.createTextNode('body[data-mqd]:before {background:red;border:1px solid #900;color:#fff;content:attr(data-mqd);font-family:"Courier New",Courier,monospace;font-size:12px;left:0;line-height: 16px;padding:3px 6px 5px 6px;position:fixed;top:0;z-index:9999;}');
 		
 		style.type = 'text/css';
 		
